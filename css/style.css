@@ -1,0 +1,214 @@
+/* cssgloabal */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    font-size: 16px;
+
+}
+/* header */
+.header{
+    background-color: white;
+    height: 70px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 8px rgba(0,0,0.3);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.header__logo{
+    width: 60px;
+}
+.header__nav ul{
+    list-style: none;
+    margin: 0 15px;
+}
+.header__nav ul li{
+    display: inline;
+    margin: 0 20px;
+}
+.header__nav a{
+    text-decoration: none;
+    color:black;
+    font-size: 1rem;
+    transition: all .5s;
+}
+.header__nav a:hover{
+    color: #fa5238;
+}
+.header__nav ul li.active a{
+color: #fa5238;
+}
+.header__login{
+    color: #999;
+    font-size: 1.2rem;
+}
+.header__login i{
+    font-size: 30px;
+}
+.header__login{
+    text-decoration: none;
+}
+/* carousel */
+  .swiper-slide img{
+      width: 100%;
+      margin-top: 70px;
+  }
+  /* css movie */
+  #movie{
+      margin-bottom: 30px;
+  }
+  .section-title{
+      text-align: center;
+      font-size: 2rem;
+      color: black;
+  }
+  .section-title span{
+      margin: 0 1.5rem;
+      transition: all .5s;
+      cursor: pointer;
+  }
+  .section-title span:hover{
+      color: #fa5238;
+  }
+  .section-title span.active{
+      color: #fa5238;
+  }
+  .movie__content{
+      padding: 0 10%;
+  }
+  .movie__items img{
+      max-width: 100%;
+      border-radius: 7px;
+  }
+  .movie__items p{
+      font-size: 1.2rem;
+  }
+  .movie__items .btn-read-more{
+      background-color: #fa5238;
+      color: white;
+      padding: 0.7rem 0;
+      width: 100%;
+      border-radius: 0.5rem;
+      border: none;
+      font-weight: bold;
+      display: none;
+      margin-top: 5px;
+  }
+  /* customize owl carousel */
+  #movie .owl-prev{
+    position: absolute;
+    top: 30%;
+    left: -6rem;
+  }
+  #movie .owl-prev span{
+      font-size: 4rem;
+  }
+  #movie .owl-next{
+      position: absolute;
+      top: 30%;
+      right: -3rem;
+  }
+  #movie .owl-next span{
+    font-size: 4rem;
+}
+/* end custo */
+.movie__items:hover .btn-read-more{
+ display: block;
+}
+.movie__items:hover p{
+    display: none;
+}
+/* css news */
+.news__content{
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: minmax(270px,auto);
+    grid-gap: 10px;
+}
+.news__content a{
+    display: block;
+    height: 100%;
+}
+/* customize hover effect */
+.news__content .grid{
+    padding: 0;
+}
+.news__content .grid figure{
+    max-width: unset;
+    max-width: unset;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.news__content figure.effect-ruby p{
+    padding: 1rem;
+}
+/* contact */
+.contact{
+    margin-top: 50px;
+    background: url(../images/background-contact.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contact .section-title{
+    color: white;
+}
+.contact__content{
+    padding: 0 20%;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-gap: 2rem;
+}
+.contact__form{
+    background-color: white;
+    width: 100%;
+}
+.contact__form h2{
+    text-align: center;
+}  
+.contact__info{
+    background-color: white;
+} 
+.contact__info p{
+    text-align: left;
+    margin: 27px 0;
+}
+/* customize input defect */
+.input__field--hoshi{
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+.input__label--hoshi-color-1::after{
+    border-bottom: 3px solid #fa5238;
+}
+.contact__form input{
+    max-width: unset;
+    width: 90%;
+    margin: 3px auto;
+}
+.contact__form form{
+    text-align: center;
+}
+.btn-contact-submit{
+    background-color: #fa5238;
+    border: none;
+    color: white;
+    padding: 0.7rem 0.2rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.btn-back-top{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 100;
+}
